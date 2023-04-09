@@ -1,0 +1,14 @@
+@font-face {
+  font-family: BR;
+  src: url(../Font/BRRRTrial-Skrrt/BRRRTrial-Skrrt.otf);
+}
+#app{
+  font-family: BR;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,h2 {
+  font-family: BR;
+
+}

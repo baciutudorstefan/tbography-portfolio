@@ -1,0 +1,104 @@
+@media only screen and (min-width: 1024px){
+    #app{
+        display: flex;
+        flex-direction: row;
+    }
+    .home__page-header{
+        padding-right: 50px;
+        padding-bottom: 64px;
+        padding: 0px 50px 64px 32px;
+    }
+    .menu__route{
+        position: fixed;
+        top: 88vh;
+    }
+    .home__page-description{
+        font-size: 48px;
+        line-height: 48px;
+        max-width: 800px !important;
+    }
+    .home__page--modal-details,
+    .home__page--modal-cta{
+        display: none;
+    }
+    .home__page-footer--title{
+        font-size: 48px;
+        line-height: 48px;
+
+    }
+    .home__page-image{
+        min-height: 333px;
+    }
+
+    .home__page-footer--section > div:nth-child(1){
+        padding-top: 56px;
+    }
+
+    .home__page-footer--section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 33px;
+        justify-items: end;
+    }
+    .signature{
+        display: initial;
+    }
+    .home__page-footer--desciption{
+        font-family: 'Roboto Mono', monospace;
+        padding: 32px 0px 64px 0px;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .home__page-header{
+        padding-right: 341px;
+    }
+    .home__page-description{
+        max-width: 950px !important;
+    }
+    .menu__route{
+        position: fixed;
+        top: 88vh;
+    }
+    .home__page-image{
+        height: 480px;
+        min-height: 480px;
+    }
+    .home__page-image:nth-child(1){
+        background-image: url(../../assets/images/img_overlay.jpg);
+    }
+    .home__page--modal{
+        background: black;
+        border: 1px solid #E8ED06;
+        border-bottom: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 544px;
+        width: 544px;
+        max-height: 308px;
+        height: 308px;
+        padding: 32px;
+    }
+    .home__page--modal > a {
+        background: #E8ED06;
+        color: black;
+        display: block;
+
+        font-size: 12px;
+        line-height: 12px;
+        padding: 12px 32px;
+        text-decoration: none;
+        max-width: 155px;
+    }
+    .home__page--modal-details{
+        display: block;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .home__page-image:nth-child(1){
+        padding-left: 48px;
+        padding-bottom: 0px;
+    }
+}

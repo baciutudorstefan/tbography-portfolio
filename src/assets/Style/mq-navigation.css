@@ -1,0 +1,16 @@
+@media only screen and (min-width: 1024px){
+    .menu{
+        align-items: center;
+        flex-direction: column;
+        max-width: 80px;
+        padding-right: 0px;
+        padding-bottom: 64px;
+        max-height: 100vh;
+        height: 100vh;
+    }
+    .brand__logo{
+        height: 112px;
+        padding: 48px 16px 0px 16px;
+    }
+   
+}
