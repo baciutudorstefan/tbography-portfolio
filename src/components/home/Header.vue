@@ -1,11 +1,11 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import {ref, reactive} from 'vue';
+import {onMounted, onBeforeUnmount, ref } from 'vue';
 import menuicn from "../../assets/images/menuicn.svg";
 import { MDBCollapse} from "mdb-vue-ui-kit";
 
 let collapse9 = ref(false);
-
+ 
 </script>
 
 <template>
@@ -15,16 +15,17 @@ let collapse9 = ref(false);
         </span>
         <div class="menu__route">
             <MDBCollapse v-model="collapse9" id="navbarToggleExternalContent9" class="menu__navigation">
-                
-            <ul >
-                <nav>
-                    <RouterLink @click="toggleMenu = !toggleMenu" to="/">home</RouterLink>
-                    <RouterLink @click="toggleMenu = !toggleMenu" to="/about">about</RouterLink>
-                    <RouterLink @click="toggleMenu = !toggleMenu" to="/collections">collections</RouterLink>
-                    <RouterLink @click="toggleMenu = !toggleMenu" to="/chat">let's chat</RouterLink>
-                    
+                <nav class="menu__wrapper">
+                  <span class="menu__route-nav">  
+                    <RouterLink @click="collapse9 = !collapse9" to="/">home</RouterLink>
+                    <RouterLink @click="collapse9 = !collapse9" to="/about">about</RouterLink>
+                    <RouterLink @click="collapse9 = !collapse9" to="/collections">collections</RouterLink>
+                    <RouterLink @click="collapse9 = !collapse9" to="/chat">let's chat</RouterLink>
+                  </span>
+                  <!-- <span class="menu__route-image"></span> -->
+                  <img class="menu__route-image" src="/src/assets/images/tb_menu_pic 1.png" alt="">
+
                 </nav>
-            </ul>
             </MDBCollapse>
         </div>
         <button @click="collapse9 = !collapse9" class="navbar-toggler first-button"
@@ -41,6 +42,9 @@ let collapse9 = ref(false);
 @import url(../../assets/Style/navigation.css);
 @import url(../../assets/Style/mq-navigation.css);
 
+.menu__route-image{
+  display: none;
+}
 .navbar{
     margin: none !important;
     padding: none !important;
