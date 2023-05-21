@@ -1,11 +1,19 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import {onMounted, onBeforeUnmount, ref } from 'vue';
+import {onMounted, watch, ref } from 'vue';
 import menuicn from "../../assets/images/menuicn.svg";
 import { MDBCollapse} from "mdb-vue-ui-kit";
 
 let collapse9 = ref(false);
- 
+
+watch(collapse9, (value) => {
+      if (value) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'auto';
+      }
+    });
+
 </script>
 
 <template>
@@ -16,12 +24,15 @@ let collapse9 = ref(false);
         <div class="menu__route">
             <MDBCollapse v-model="collapse9" id="navbarToggleExternalContent9" class="menu__navigation">
                 <nav class="menu__wrapper">
-                  <span class="menu__route-nav">  
+                  <Transition name="fade">
+
+                  <span class="menu__route-nav" style="overflow: hidden !important;">  
                     <RouterLink @click="collapse9 = !collapse9" to="/">home</RouterLink>
                     <RouterLink @click="collapse9 = !collapse9" to="/about">about</RouterLink>
                     <RouterLink @click="collapse9 = !collapse9" to="/collections">collections</RouterLink>
                     <RouterLink @click="collapse9 = !collapse9" to="/chat">let's chat</RouterLink>
                   </span>
+                  </Transition>
                   <!-- <span class="menu__route-image"></span> -->
                   <img class="menu__route-image" src="/src/assets/images/tb_menu_pic 1.png" alt="">
 

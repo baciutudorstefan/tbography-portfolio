@@ -1,18 +1,23 @@
 
-.home__page-header{
+.home__page-header,
+.about__page-header{
     background-color: #E8ED06;
     border-top: 1px solid black;
     padding: 0px  16px 40px 16px;
 }
 
-.home__page-title{
+.home__page-title,
+.about__page-title{
     font-weight: 400;
     font-size: 16px;
     font-family: 'Roboto Mono', monospace;
     line-height: 24px;
     padding-top: 64px;
 }
-.home__page-description{
+.home__page-description,
+.about__page-description{
+    color: black;
+    font-family: BR;
     font-weight: 500;
     font-size: 32px;
     line-height: 48px;
@@ -24,6 +29,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    z-index: -1;
+    position: relative;
 }
 
 .home__page-image{
@@ -32,24 +39,18 @@
     background-position: bottom;
     background-size: cover;
     color: white;
-    display: flex;
     font-family: BR;
-    max-height: 333px;
     min-height: 152px;
-    padding: 16px;
+    position: relative;
 }
-.home__page-image:nth-child(1){
-    background-image: url(../../assets/images/img_wrapper.jpg);
+
+.home__page-images-title{
+    position: absolute;
+    color: white;
+    bottom: 20px;
+    left: 32px;
 }
-.home__page-image:nth-child(2){
-    background-image: url(../../assets/images/img_wrapper-1.jpg);
-}
-.home__page-image:nth-child(3){
-    background-image: url(../../assets/images/img_wrapper-2.jpg);
-}
-.home__page-image:nth-child(4){
-    background-image: url(../../assets/images/img_wrapper-3.jpg);
-}
+
 .home__page-footer--section > div:nth-child(1){
     padding-top: 48px ;
     padding-left: 32px;
@@ -57,18 +58,22 @@
 }
 
 .home__page--modal-details,
-    .home__page--modal-cta{
-        display: none;
-    }
+.home__page--modal-title,
+.home__page--modal-cta{
+    display: none;
+}
 .home__page-footer--title{
+    color: black;
     font-weight: 500;
     font-size: 32px;
+    font-family: BR;
     line-height: 32px;
 }
 
 .home__page-footer--desciption{
+    color: black;
     font-family: 'Roboto Mono', monospace;
-    padding: 40px 0px;
+    padding: 40px 16px 40px 0px;
 }
 
 .home__page-footer--social{

@@ -1,11 +1,11 @@
 <script setup>
 import Header from '../components/home/Header.vue';
-
+import Collections from '../components/collections/Collections.vue';
 
 </script>
 <template>
   <div class="collections">
-    <h1>This is an collections page</h1>
+    <Collections />
   </div>
 </template>
 

@@ -32,6 +32,38 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/ChatView.vue')
+    },
+    {
+      path: '/citiscapes',
+      name: 'citiscapes',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../components/collections/Citiscapes.vue')
+    },
+    {
+      path: '/landscape',
+      name: 'landscape',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../components/collections/Landscape.vue')
+    },
+    {
+      path: '/desk',
+      name: 'desk',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../components/collections/Desk.vue')
+    },
+    {
+      path: '/product',
+      name: 'product',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../components/collections/Product.vue')
     }
   ]
 })

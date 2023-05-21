@@ -1,4 +1,6 @@
 <script setup> 
+import { RouterLink, RouterView } from 'vue-router'
+
 import fbIcon from "../../assets/images/facebook-f.svg"
 import instaIcon from "../../assets/images/instagram.svg"
 import unsplashicon from "../../assets/images/unsplash_icon.svg"
@@ -7,21 +9,13 @@ import unsplashicon from "../../assets/images/unsplash_icon.svg"
 <template class="home__page">
     <div class="home__page-header">
         <p class="home__page-title">Tudor Baciu  -  Photography</p>
-        <h2 class="home__page-description">Grateful to capture life’s joy with you</h2>
+        <h2 class="home__page-description">collections</h2>
     </div>
     <section class="home__page-images--grid">
-        <div class="home__page-image"><img src="../../assets/images/img_wrapper.jpg" alt=""> 
-            <p class="home__page-images-title">citiscapes</p>   
-
-            <div class="home__page--modal">
-                <p class="home__page--modal-title">citiscapes</p>   
-                <p class="home__page--modal-details">A collection of cityscapes photography showcases stunning images of bustling metropolises and urban landscapes, capturing the unique architecture, lights, and energy of each city.</p>
-                <a class="home__page--modal-cta" href="#">view gallery</a>
-            </div>
-            </div>
-        <div class="home__page-image"><img src="../../assets/images/img_wrapper-1.jpg" alt=""> <p class="home__page-images-title">landscape</p></div>
-        <div class="home__page-image"><img src="../../assets/images/img_wrapper-2.jpg" alt=""> <p class="home__page-images-title">desk</p></div>
-        <div class="home__page-image"><img src="../../assets/images/img_wrapper-3.jpg" alt=""> <p class="home__page-images-title">product</p></div>
+        <span class="home__page-image"><img src="../../assets/images/img_wrapper.jpg" alt=""> <RouterLink to="/citiscapes" class="home__page-images-title">citiscapes</RouterLink></span>
+        <span class="home__page-image"><img src="../../assets/images/img_wrapper-1.jpg" alt=""> <RouterLink to="/landscape" class="home__page-images-title">landscape</RouterLink></span>
+        <span class="home__page-image"><img src="../../assets/images/img_wrapper-2.jpg" alt=""> <RouterLink to="/desk" class="home__page-images-title">desk</RouterLink></span>
+        <span class="home__page-image"><img src="../../assets/images/img_wrapper-3.jpg" alt=""> <RouterLink to="/product" class="home__page-images-title">product</RouterLink></span>
     </section>
     <div class="home__page-footer--section">
         <div>
