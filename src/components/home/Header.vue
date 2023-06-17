@@ -34,7 +34,7 @@ watch(collapse9, (value) => {
                   </span>
                   </Transition>
                   <!-- <span class="menu__route-image"></span> -->
-                  <img class="menu__route-image" src="/src/assets/images/tb_menu_pic 1.png" alt="">
+                  <img class="menu__route-image" src="/src/assets/images/tb_menu_pic.png" alt="">
 
                 </nav>
             </MDBCollapse>

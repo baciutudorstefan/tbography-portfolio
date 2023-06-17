@@ -1,0 +1,1 @@
+import{o as e,c as t,a as s}from"./index-80cbe019.js";const _={class:"chat"},a=s("h1",null,"This is an chat page",-1),c=[a],r={__name:"ChatView",setup(o){return(n,i)=>(e(),t("div",_,c))}};export{r as default};

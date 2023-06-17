@@ -5,30 +5,35 @@ import unsplashicon from "../../assets/images/unsplash_icon.svg"
 </script>
 
 <template>
+    <div  class="about__page">
     <div class="about__page-header">
         <p class="about__page-title">Tudor Baciu  -  Photography</p>
         <h2 class="about__page-description">about</h2>
     </div>
+    <div>
     <div class="about__page-background--section">
         <span class="about__page-background--title">background</span>
         <p class="about__page-background--description">Tudor has always been drawn to photography, and after many years of honing his skills and perfecting his craft, he has established himself as a talented and creative photographer. He has a passion for capturing the beauty and essence of his subjects, whether they are portraits, landscapes, or products.</p>
     </div>
-        <img class="about__page-background--image" src="../../assets/images/image 3 1.png" alt="">
-    
+    <img class="about__page-background--image" id="bg--img" src="../../assets/images/imagebird.png" alt="">
+    <img class="about__page-background--image--mq" src="../../assets/images/imagelaketree.png" alt="">
+    </div>
+    <div>
     <div class="about__page-background--section">
+        <img class="about__page-background--image--mq" src="../../assets/images/imagebird.png" alt="">
         <span class="about__page-background--title">work</span>
         <p class="about__page-background--description">Tudor's work has been featured in galleries and exhibitions, and is highly sought after by art collectors and photography enthusiasts alike. He has a keen sense of drama and atmosphere, and his images are both powerful and memorable. Whether you are drawn to his portraits, landscapes, or still lifes, Tudor's work is sure to leave a lasting impression.</p>
     </div>
     <span style="padding: 32px 16px 32px 16px;">
     <a class="about__page-cta" href="http://unsplash.com">view collections</a>
 </span>
-<img class="about__page-background--image" src="../../assets/images/image 1 1.png" alt="">
+<img class="about__page-background--image" id="bg--img" src="../../assets/images/imagelaketree.png" alt="">
 <div class="about__page-background--section" style="padding-bottom: 60px ">
     <div class="philosophy">
         <span class="about__page-background--title">philosophy</span>
         <p class="about__page-background--description">Tudor's approach to photography is one of wonder and discovery. He believes that every image has the potential to tell a story and evoke emotion, and he strives to capture that in every shot. His images are not just mere representations of the world, but rather a reflection of his own personal vision and perspective.</p>
     </div>
-    </div>
+    </div></div>
     <div class="home__page-footer--section" style="border-top: 1px solid black;">
         <div>
         <h2 class="home__page-footer--title">Let's chat</h2>
@@ -43,9 +48,11 @@ import unsplashicon from "../../assets/images/unsplash_icon.svg"
             <img style="height: 100%;" src="../../assets/images/signature.svg" alt="signature">
         </div>
     </div>
+</div>
 </template>
 <style>
 @import url(../../assets/Style/home.css);
 @import url(../../assets/Style/about.css);
+@import url(../../assets/Style/mq-about.css);
 
 </style>

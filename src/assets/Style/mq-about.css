@@ -1,0 +1,12 @@
+@media only screen and (maxs-width: 1024px){
+    .about__page{
+        display: flex;
+        flex-direction: column;
+    }
+    #bg--img{
+        display: none !important;
+    }
+    .about__page-background--image--mq{
+        margin: 0 auto;
+    }
+}
